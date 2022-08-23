@@ -16,9 +16,6 @@ section
   justify-content: space-between;
   align-items: center;
   background: #fff;
-
-
-  
 }
 header
 {
@@ -71,6 +68,12 @@ header ul li a
 {
   position: relative;
   max-width: 600px;
+  /* Intento de hacer que el h2 del texto no se deforme */
+  /* display: grid;
+  gap: 6em;
+  grid-auto-flow:dense;
+  grid-auto-rows: 6.5em;
+  grid-template-columns: repeat(auto-fill, minmax(37.5em, 1fr)); */
 }
 .content .textBox h2
 {
@@ -168,4 +171,64 @@ header ul li a
   height: 100%;
   background: #017143;
   clip-path: circle(600px at right 800px);
+}
+@media(Max-width: 991px)
+{
+  section
+  {
+    padding: 20px 20px 120px;
+  }
+  header
+  {
+    padding: 20px;
+  }
+  header .logo
+  {
+    max-width: 60px;
+  } 
+  header ul 
+  {
+    display: none;
+  }
+  .content
+  {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+  .content .textBox
+  {
+    max-width: 100%;
+  }
+  .content .textBox h2
+  {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  .content .imgBox
+  {
+    max-width: 100%;
+    justify-content: center;
+    padding-right: 0;
+  }
+  .content .imgBox img
+  {
+    max-width: 300px;
+  }
+  .thumb li img
+  {
+    max-width: 40px;
+  }
+  .sci
+  {
+    background: #017143;
+    right: 0;
+    width: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .circle
+  {
+    top: 126px;
+    clip-path: circle(450px at center bottom);
+  }
 }
