@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>StarBucks</title>
+</head>
+<body>
+  <section class="section">
+    <div class="circle"></div>
+    <header>
+      <a href="#"><img src="img/logo.png"  class="logo" /></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">What's New</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>It's not just Coffee<br>It's <span>StarBucks</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ea ut, dicta
+        dolorem ratione sint veniam, blanditiis explicabo velit dignissimos, deleniti doloribus 
+        officia adipisci pariatur sit laudantium consequatur inventore. Ducimus.</p>
+        <a href="#"> Learn More</a>
+      </div>
+      <div class="imgBox">
+        <img src="img/img1.png" class="starbucks" />
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="img/thumb1.png" onclick="imgSlider('img/img1.png');changeCirculeColor('#017143')"/></li>
+      <li><img src="img/thumb2.png" onclick="imgSlider('img/img2.png');changeCirculeColor('#eb7495')"/></li>
+      <li><img src="img/thumb3.png" onclick="imgSlider('img/img3.png');changeCirculeColor('#d752b1')"/></li>
+    </ul>
+    <ul class="sci">
+      <li><a href="#"><img src="img/facebook.png" /></a></li>
+      <li><a href="#"><img src="img/twitter.png" /></a></li>
+      <li><a href="#"><img src="img/instagram.png" /></a></li>
+    </ul>
+  </section>   
+  <script src="main.js"></script>
+</body>
+</html>
